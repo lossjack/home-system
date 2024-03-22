@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Admin,  , LIC=KRMW3-AB7UF-BS6YX-H6S4A-60JQP-CFNZH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  E:\STM32\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\FeiQ_File\teacher File\STM32\阶段项目1 - 副本\project\FreeRTOS_Task\PRO\first.uvprojx
+Project File Date:  01/29/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\STM32\keil5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\Hardware\rtc.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.c(58): warning:  #1166-D: returning pointer to local variable
+  	return (char *)tbuf;
+..\USER\main.c(50): warning:  #177-D: variable "t"  was declared but never referenced
+  	u8 t = 0;
+..\USER\main.c(67): warning:  #177-D: variable "t"  was declared but never referenced
+  	u8 t = 0;
+..\USER\main.c(83): warning:  #177-D: variable "time"  was declared but never referenced
+  	int time=123;
+..\USER\main.c(84): warning:  #177-D: variable "tbuf"  was declared but never referenced
+  	u8 tbuf[80]={0}; // 用于存储格式化后的时间和日期字符串
+..\USER\main.c(245): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		float current_hum = (float)humih-27.71;
+..\USER\main.c(275): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  		if(strcmp(tbuf,tbuf_clock)==0){
+..\USER\main.c(275): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  		if(strcmp(tbuf,tbuf_clock)==0){
+..\USER\main.c(391): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate( Oled_show_temp,  "TaskDHT11",  128, NULL,        10,    &TaskDHT11TCB);
+..\USER\main.c(392): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate( Beep_Clock,      "TaskBeepCLOCK",  256, NULL,         10,    &TaskBeepCLOCKTCB);
+..\USER\main.c(393): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate( Turn_led,        "Turn_led",  128, NULL,         12,    &TaskLedTCB);
+..\USER\main.c(394): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate( BlueTooth_Ctrl,  "BlueTooth",  128, NULL,         12,    &TaskBlueToothTCB);
+..\USER\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=19820 RO-data=3748 RW-data=208 ZI-data=79600  
+FromELF: creating hex file...
+".\Objects\first.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil.STM32F4xx_DFP.1.0.8
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\STM32\keil5\pack\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
